@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="095a14cd-3541-465d-8c19-af645213cb57" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1iKqcZI8je8R8UX4kMM5NrIOwNf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="SCSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Waiizen\Desktop\portfolio\images" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="095a14cd-3541-465d-8c19-af645213cb57" name="Default Changelist" comment="" />
+      <created>1601666711138</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601666711138</updated>
+      <workItem from="1601666712308" duration="12322000" />
+      <workItem from="1601912241150" duration="871000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="714" y="343" key="#Notifications" timestamp="1601912759557">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="714" y="343" key="#Notifications/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601912759557" />
+    <state x="552" y="160" key="#Plugins" timestamp="1601912610825">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="160" key="#Plugins/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601912610825" />
+    <state x="769" y="338" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601672547332">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="338" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601672547332" />
+    <state x="533" y="371" key="EditFileWatcherDialog" timestamp="1601672201878">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="533" y="371" key="EditFileWatcherDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601672201878" />
+    <state x="828" y="197" key="FileChooserDialogImpl" timestamp="1601913108011">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="828" y="197" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601913108011" />
+    <state x="784" y="439" key="Github.CreateGistDialog" timestamp="1601912411991">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="784" y="439" key="Github.CreateGistDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601912411991" />
+    <state x="838" y="417" key="Github.ShareDialog" timestamp="1601913027634">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="838" y="417" key="Github.ShareDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601913027634" />
+    <state x="366" y="238" key="SettingsEditor" timestamp="1601913112751">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="366" y="238" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601913112751" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1601675694669">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601675694669" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1601913013502">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601913013502" />
+  </component>
+</project>
