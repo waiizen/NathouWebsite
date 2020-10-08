@@ -1,4 +1,6 @@
 $colorBG: orange
+$colorOrange: #ffd817
+$colorOrangeClair: #ffe817
 $ligneLeftContentRight: 7
 $ligneRightContentRight: 12
 $ligneTopContent: 1
@@ -51,7 +53,10 @@ body, html
   grid-row: #{$ligneTopContent} / #{$ligneBottomContent}
   border-right: 2px solid black
   text-align: center
-  padding: 8% 4% 4% 4%
+
+  & img
+    width: 50%
+    height: auto
 
 .contentRight
   grid-column: #{$ligneLeftContentRight} / #{$ligneRightContentRight}
@@ -60,39 +65,36 @@ body, html
   grid-template-columns: repeat(7, 1fr)
   grid-template-rows: repeat(8, 1fr)
 
-.contentLeft img
-  width: 50%
-  height: auto
-
 .competence
   grid-column: 1 / 8
   grid-row: 1 / 3
   background-color: #f6f6f6
-  border-right: 20px solid #ffe817
+  border-right: 20px solid $colorOrangeClair
+  padding-left: 10%
 
 .formation
   grid-column: 1 / 8
   grid-row: 3 / 5
   background-color: #efefef
-  border-right: 20px solid #ffd817
+  border-right: 20px solid $colorOrange
 
 .experience
   grid-column: 1 / 8
   grid-row: 5 / 7
   background-color: #f6f6f6
-  border-right: 20px solid #ffe817
+  border-right: 20px solid $colorOrangeClair
 
 .portfolio
   grid-column: 1 / 8
   grid-row: 7 / 9
   background-color: #efefef
-  border-right: 20px solid #ffd817
+  border-right: 20px solid $colorOrange
 
 .portfolio:before, .formation:before
-  background-color: #ffd817
+  background-color: $colorOrange
 
 .experience:before, .competence:before
-  background-color: #ffe817
+  background-color: $colorOrangeClair
 
 .box
   text-align: center
@@ -101,6 +103,7 @@ body, html
   transition: color 1000ms
   font-family: $police
   font-size: 200%
+
   &:before
     content: ""
     position: absolute
@@ -120,8 +123,30 @@ body, html
   color: #debd15
   font-weight: lighter
 
-.about h2
-  font-weight: lighter
+.close
+  font-family: $police
+  background-image: linear-gradient(to right bottom, #fff193, #ffef7b, #ffed62, #ffea45, #ffe817)
+  margin-bottom: 5%
+  border-bottom: 1px solid black
+  opacity: 1
+  transition: all 0.3s ease
 
-.about p
-  text-align: justify
+  &:hover
+    font-size: 140%
+  & p
+    margin: 0%
+    padding: 1% 0% 1% 0%
+    letter-spacing: 4px
+
+.about
+
+  & h2
+    font-weight: lighter
+  & p
+    text-align: justify
+
+.aboutAll
+  padding: 8% 4% 4% 4%
+
+.competenceAll, .formationAll, .experienceAll, .portfolioAll
+  padding: 0% 4% 4% 4%

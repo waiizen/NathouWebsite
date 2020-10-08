@@ -19,8 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c96601a7-8935-4910-9883-acc0770e6807" name="Default Changelist" comment="commit 3">
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
+    <list default="true" id="c96601a7-8935-4910-9883-acc0770e6807" name="Default Changelist" comment="update&#10;finished the basic contentLeft&#10;finished the switch function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
@@ -67,7 +66,8 @@
       <updated>1601906089076</updated>
       <workItem from="1601906091475" duration="682000" />
       <workItem from="1601975959270" duration="111000" />
-      <workItem from="1601976072375" duration="3745000" />
+      <workItem from="1601976072375" duration="5991000" />
+      <workItem from="1602142888486" duration="12406000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1601906503073</created>
@@ -97,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601906708662</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update&#10;finished the basic contentLeft&#10;finished the switch function">
+      <created>1601979928338</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601979928338</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,7 +126,8 @@
     <MESSAGE value="Test" />
     <MESSAGE value="Test commit 2" />
     <MESSAGE value="commit 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 3" />
+    <MESSAGE value="update&#10;finished the basic contentLeft&#10;finished the switch function" />
+    <option name="LAST_COMMIT_MESSAGE" value="update&#10;finished the basic contentLeft&#10;finished the switch function" />
   </component>
   <component name="WindowStateProjectService">
     <state x="686" y="344" width="622" height="333" key="#File_Watchers" timestamp="1601976266197">
@@ -134,10 +142,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601979621621" />
-    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1601906720632">
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1601979932439">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="239" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601906720632" />
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601979932439" />
     <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601906652272">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
