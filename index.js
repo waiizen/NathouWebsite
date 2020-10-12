@@ -10,11 +10,10 @@ $(document).ready(function (){
     // calcul auto du line height
     autoLine();
 
-    // click sur accueil
+    // click sur close
     $(".close").css('cursor', 'pointer');
     $('.close').click(function(){
-        $('.close').hide();
-        hideAll();
+        hideAll(2);
         $('.aboutAll').show("slow");
     })
 
@@ -22,8 +21,7 @@ $(document).ready(function (){
     $(".competence").css('cursor', 'pointer');
     $(".competence").click(function (){
         if($('.competenceAll').is(":hidden")) {
-            hideAll();
-            $('.close').show("fast");
+            hideAll(1);
             $('.competenceAll').show("slow");
         }
     });
@@ -32,8 +30,7 @@ $(document).ready(function (){
     $(".formation").css('cursor', 'pointer');
     $(".formation").click(function (){
         if($('.formationAll').is(":hidden")) {
-            hideAll();
-            $('.close').show("fast");
+            hideAll(1);
             $('.formationAll').show("slow");
         }
     });
@@ -42,8 +39,7 @@ $(document).ready(function (){
     $(".experience").css('cursor', 'pointer');
     $(".experience").click(function (){
         if($('.experienceAll').is(":hidden")) {
-            hideAll();
-            $('.close').show("fast");
+            hideAll(1);
             $('.experienceAll').show("slow");
         }
     });
@@ -52,18 +48,25 @@ $(document).ready(function (){
     $(".portfolio").css('cursor', 'pointer');
     $(".portfolio").click(function (){
         if($('.portfolioAll').is(":hidden")) {
-            hideAll();
-            $('.close').show("fast");
+            hideAll(1);
             $('.portfolioAll').show("slow");
         }
     });
+
+    // click sur cBox
+    $(".cBox").css('cursor', 'pointer');
 
     function autoLine(){
         $(".box").css('line-height', ($(".box").css('height')));
     }
 
-    function hideAll(){
-        $('.contentLeft').children().hide("slow");
+    function hideAll(n){
+        if(n==1){
+            if($('.close').is(':hidden')) $('.close').show("fast");
+            $('.contentLeft').children().not('.close').hide("slow");
+        } else if(n==2){
+            $('.contentLeft').children().hide("slow");
+        }
     }
 
 });

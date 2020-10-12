@@ -1,17 +1,19 @@
-$colorBG: orange
-$colorOrange: #ffd817
-$colorOrangeClair: #ffe817
+$colorBG: #1d3557
+$colorHover: #457b9d
+$colorHoverClair: #a8dadc
+$colorText: #44a9ae
+$colorRouge: #e63946
 $ligneLeftContentRight: 7
 $ligneRightContentRight: 12
 $ligneTopContent: 1
 $ligneBottomContent: 10
-$police: 'Pacifico', cursive
-$police2: cursive
+$police: 'Montserrat', sans-serif
+$police2: sans-serif
 
 body, html
   margin: 0
   padding: 0
-  font-family: $police2
+  font-family: $police
 
 .containerBase
   display: grid
@@ -53,7 +55,6 @@ body, html
   grid-row: #{$ligneTopContent} / #{$ligneBottomContent}
   border-right: 2px solid black
   text-align: center
-
   & img
     width: 50%
     height: auto
@@ -69,32 +70,32 @@ body, html
   grid-column: 1 / 8
   grid-row: 1 / 3
   background-color: #f6f6f6
-  border-right: 20px solid $colorOrangeClair
+  border-right: 20px solid $colorHoverClair
   padding-left: 10%
 
 .formation
   grid-column: 1 / 8
   grid-row: 3 / 5
   background-color: #efefef
-  border-right: 20px solid $colorOrange
+  border-right: 20px solid $colorHover
 
 .experience
   grid-column: 1 / 8
   grid-row: 5 / 7
   background-color: #f6f6f6
-  border-right: 20px solid $colorOrangeClair
+  border-right: 20px solid $colorHoverClair
 
 .portfolio
   grid-column: 1 / 8
   grid-row: 7 / 9
   background-color: #efefef
-  border-right: 20px solid $colorOrange
+  border-right: 20px solid $colorHover
 
 .portfolio:before, .formation:before
-  background-color: $colorOrange
+  background-color: $colorHover
 
 .experience:before, .competence:before
-  background-color: $colorOrangeClair
+  background-color: $colorHoverClair
 
 .box
   text-align: center
@@ -103,7 +104,6 @@ body, html
   transition: color 1000ms
   font-family: $police
   font-size: 200%
-
   &:before
     content: ""
     position: absolute
@@ -120,26 +120,18 @@ body, html
     transform: scaleX(1)
 
 .important
-  color: #debd15
+  color: $colorText
   font-weight: lighter
 
 .close
-  font-family: $police
-  background-image: linear-gradient(to right bottom, #fff193, #ffef7b, #ffed62, #ffea45, #ffe817)
-  margin-bottom: 5%
-  border-bottom: 1px solid black
-  opacity: 1
-  transition: all 0.3s ease
-
-  &:hover
-    font-size: 140%
-  & p
-    margin: 0%
-    padding: 1% 0% 1% 0%
-    letter-spacing: 4px
+  text-align: right
+  padding-top: 1%
+  padding-right: 1%
+  & img
+    width: 5%
+    height: auto
 
 .about
-
   & h2
     font-weight: lighter
   & p
@@ -150,3 +142,26 @@ body, html
 
 .competenceAll, .formationAll, .experienceAll, .portfolioAll
   padding: 0% 4% 4% 4%
+
+.competenceAll
+  text-align: center
+  & p
+    text-align: justify
+  & h1
+    text-align: center
+  & .cBox
+    border: 1px solid $colorHover
+    border-radius: 15px 5px 15px 5px
+    display: inline-block
+    width: 15%
+    height: 2em
+    line-height: 2em
+    background-color: $colorHover
+    color: white
+    margin-top: 2%
+    transition: all 300ms ease-in
+    box-shadow: 5px 5px 9px -1px rgba(0,0,0,0.75)
+  & .cBox1, .cBox2, .cBox3
+    margin-right: 5%
+  & .cBox:hover
+    transform: scale(1.2)
