@@ -1,6 +1,7 @@
 $(document).ready(function (){
 
-    var isBarOn=0;
+    var isBarDevOn=0;
+    var isBarSoftOn=0;
     var compActuelle=0;
 
     // cache les div au chargement de la page
@@ -27,7 +28,7 @@ $(document).ready(function (){
         if($('.competenceAll').is(":hidden")) {
             hideAll(1);
             $('.competenceAll').show("slow");
-            bar();
+            barDev();
         }
     });
 
@@ -37,7 +38,7 @@ $(document).ready(function (){
         if($('.formationAll').is(":hidden")) {
             hideAll(1);
             $('.formationAll').show("slow");
-            bar();
+            barSoft();
         }
     });
 
@@ -118,8 +119,8 @@ $(document).ready(function (){
         }
     }
 
-    function bar(){
-        if(isBarOn==0) {
+    function barDev(){
+        if(isBarDevOn==0) {
             setTimeout(
                 function () {
                     // dev
@@ -193,6 +194,15 @@ $(document).ready(function (){
                         svgStyle: {display: 'inline-block'}
                     });
                     bar7.animate(0.8);
+                    isBarDevOn++;
+                }, 1000);
+        }
+    }
+
+    function barSoft(){
+        if(isBarSoftOn==0) {
+            setTimeout(
+                function () {
                     // software
                     var ba8 = new ProgressBar.Line('.eclipse', {
                         easing: 'easeInOut',
@@ -264,7 +274,7 @@ $(document).ready(function (){
                         svgStyle: {display: 'inline-block'}
                     });
                     bar14.animate(0.8);
-                    isBarOn++;
+                    isBarSoftOn++;
                 }, 1000);
         }
     }
