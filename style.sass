@@ -1,7 +1,7 @@
-$colorBG: #1d3557
-$colorHover: #457b9d
-$colorHoverClair: #a8dadc
-$colorText: #44a9ae
+$colorBG: #155263
+$colorHover: #ff9a3c
+$colorHoverClair: #ffc93c
+$colorText: #ff6f3c
 $colorRouge: #e63946
 $ligneLeftContentRight: 7
 $ligneRightContentRight: 12
@@ -144,24 +144,26 @@ body, html
   padding: 0% 4% 4% 4%
 
 .competenceAll
-  text-align: center
   & p
-    text-align: justify
+    text-align: center
   & h1
     text-align: center
-  & .cBox
-    border: 1px solid $colorHover
-    border-radius: 15px 5px 15px 5px
-    display: inline-block
-    width: 15%
-    height: 2em
-    line-height: 2em
-    background-color: $colorHover
-    color: white
-    margin-top: 2%
-    transition: all 300ms ease-in
-    box-shadow: 5px 5px 9px -1px rgba(0,0,0,0.75)
-  & .cBox1, .cBox2, .cBox3
-    margin-right: 5%
-  & .cBox:hover
+  & .iconeFleche
+    color: red
+    transition: 100ms ease-in all
+  & .iconeFleche:hover
     transform: scale(1.2)
+
+.containerBar
+  & .left
+    float: left
+  & p
+    margin-bottom: 0%
+    padding-bottom: 0%
+  & .date
+    font-style: italic
+  & .titreDivers
+    color: #ff9a3c
+    font-weight: bold
+  & .end
+    text-align: left

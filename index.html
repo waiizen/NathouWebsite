@@ -5,7 +5,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!--<script src="https://kit.fontawesome.com/6af4ab5eb9.js" crossorigin="anonymous"></script>-->
+    <script src="https://kit.fontawesome.com/6af4ab5eb9.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -23,7 +23,7 @@
                 </div>
                 <!-- div a la base -->
                 <div class="aboutAll">
-                    <img src="images/moi.png" alt="moi">
+                    <!--<img src="images/moi.png" alt="moi">-->
                     <div class="about">
                         <h1>Nathan FERRER</h1>
                         <h2>Ingénieur Informatique, spé e-Santé</h2>
@@ -41,15 +41,45 @@
                 <!-- div competences -->
                 <div class="competenceAll">
                     <h1>Mes compétences</h1>
-                    <p>Les compétences présentées ci-dessous sont les principales compétences que j'ai acquises, que ce soit personnellement ou professionnellement.
-                    Cependant, j'ai des bases dans plusieurs autres langages de programmation, mais je ne peux tout citer.</p>
-                    <div class="cBox1 cBox">Dev</div>
-                    <div class="cBox2 cBox">Software</div>
-                    <div class="cBox3 cBox">Linguistique</div>
-                    <div class="cBox4 cBox">Divers</div>
+                    <p><i class="fas fa-arrow-circle-left iconeFleche"></i>&nbsp;&nbsp;<span class="titreCompetence">DEVELOPPEMENT</span>&nbsp;&nbsp;<i class="fas fa-arrow-circle-right iconeFleche"></i></p>
+                    <div class="containerBar">
+                        <div class="containerBarDev">
+                            <p class="left">HTML - &nbsp;&nbsp;<i class="far fa-calendar-alt icone"></i><span class="date">&nbsp;7 ans</span></p>
+                            <div class="html bar"></div>
+                            <p class="left">CSS3 / SASS - &nbsp;&nbsp;<i class="far fa-calendar-alt icone"></i><span class="date">&nbsp;7 ans</span></p>
+                            <div class="css bar"></div>
+                            <p class="left">JS / JQUERY - &nbsp;&nbsp;<i class="far fa-calendar-alt icone"></i><span class="date">&nbsp;3 ans</span></p>
+                            <div class="js bar"></div>
+                            <p class="left">PHP - &nbsp;&nbsp;<i class="far fa-calendar-alt icone"></i><span class="date">&nbsp;3 ans</span></p>
+                            <div class="php bar"></div>
+                            <p class="left">JAVA / JEE - &nbsp;&nbsp;<i class="far fa-calendar-alt icone"></i><span class="date">&nbsp;4 ans</span></p>
+                            <div class="java bar"></div>
+                            <p class="left">C - &nbsp;&nbsp;<i class="far fa-calendar-alt icone"></i><span class="date">&nbsp;3 ans</span></p>
+                            <div class="c bar"></div>
+                            <p class="left">SQL - &nbsp;&nbsp;<i class="far fa-calendar-alt icone"></i><span class="date">&nbsp;4 ans</span></p>
+                            <div class="sql bar"></div>
+                            <p class="end"><span class="titreDivers">Divers : </span>Dev WordPress, Assembleur 80x86, NodeJS, Applications Réseaux, .NET, ...</p>
+                        </div>
+                        <div class="containerBarSoft">
+                            <p class="left">Eclipse - &nbsp;&nbsp;<i class="far fa-calendar-alt icone"></i><span class="date">&nbsp;5 ans</span></p>
+                            <div class="eclipse bar"></div>
+                            <p class="left">NetBeans - &nbsp;&nbsp;<i class="far fa-calendar-alt icone"></i><span class="date">&nbsp;3 ans</span></p>
+                            <div class="netbeans bar"></div>
+                            <p class="left">Visual Basic - &nbsp;&nbsp;<i class="far fa-calendar-alt icone"></i><span class="date">&nbsp;2 ans</span></p>
+                            <div class="vs bar"></div>
+                            <p class="left">GitHub - &nbsp;&nbsp;<i class="far fa-calendar-alt icone"></i><span class="date">&nbsp;1 an</span></p>
+                            <div class="github bar"></div>
+                            <p class="left">SVN - &nbsp;&nbsp;<i class="far fa-calendar-alt icone"></i><span class="date">&nbsp;1 an</span></p>
+                            <div class="svn bar"></div>
+                            <p class="left">Suite OFFICE - &nbsp;&nbsp;<i class="far fa-calendar-alt icone"></i><span class="date">&nbsp;+10 ans</span></p>
+                            <div class="office bar"></div>
+                            <p class="left">Linux - &nbsp;&nbsp;<i class="far fa-calendar-alt icone"></i><span class="date">&nbsp;7 ans</span></p>
+                            <div class="linux bar"></div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="formationAll">
-
 
                     FORMATION Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit orci non magna dictum, eget rutrum arcu porta. Donec quis elementum tortor. Etiam id congue sapien. Phasellus sollicitudin a dolor id facilisis. Etiam eleifend odio vitae justo posuere, pretium sodales diam molestie. Sed eget justo et ante consectetur ultrices in et nunc. Quisque ut sem eu massa tempor luctus. Praesent non libero tincidunt, vestibulum eros at, ornare metus. Maecenas a ullamcorper quam. Etiam sit amet urna at ante ullamcorper interdum tempor a lacus. Nullam lacinia vehicula quam in tincidunt. Aenean iaculis vel orci semper blandit. Suspendisse potenti.
 
@@ -96,5 +126,6 @@
             </div>
         </div>
     </div>
+<script src="node_modules/progressbar.js/dist/progressbar.js"></script>
 </body>
 </html>
