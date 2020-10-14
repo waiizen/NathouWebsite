@@ -73,13 +73,13 @@ body, html
   border-right: 20px solid $colorHoverClair
   padding-left: 10%
 
-.formation
+.experience
   grid-column: 1 / 8
   grid-row: 3 / 5
   background-color: #efefef
   border-right: 20px solid $colorHover
 
-.experience
+.formation
   grid-column: 1 / 8
   grid-row: 5 / 7
   background-color: #f6f6f6
@@ -167,3 +167,148 @@ body, html
     font-weight: bold
   & .end
     text-align: left
+
+// EXPERIENCE
+//Text Styles
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700")
+$font-sans: 'Open Sans', sans-serif
+
+//Colors
+$black: #34435E
+$white: #ffffff
+
+main
+  min-width: 300px
+  max-width: 500px
+  margin: auto
+
+main p
+  font-size: 1em
+  line-height: 1.75em
+  border-top: 3px solid
+  border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%)
+  border-image-slice: 1
+  border-width: 3px
+  margin: 0
+  padding: 40px
+  counter-increment: section
+  position: relative
+  color: $black
+
+  //numbers
+  &:before
+    content: counter(section)
+    position: absolute
+    border-radius: 50%
+    padding: 10px
+    height: 1.25em
+    width: 1.25em
+    background-color: $black
+    text-align: center
+    line-height: 1.25em
+    color: $white
+    font-size: 1em
+//odd number borders
+main p:nth-child(odd)
+  border-right: 3px solid
+  padding-left: 0
+
+  &:before
+    left: 100%
+    margin-left: -20px
+
+
+//even number borders
+main p:nth-child(even)
+  border-left: 3px solid
+  padding-right: 0
+
+  &:before
+    right: 100%
+    margin-right: -20px
+
+
+//handle first and last
+main p:first-child
+  border-top: 0
+  border-top-right-radius: 0
+  border-top-left-radius: 0
+
+main p:last-child
+  border-bottom-right-radius: 0
+  border-bottom-left-radius: 0
+
+// FORMATION ALL
+
+.formationAll
+  // ----------------  THE BASICS
+
+  @import url('https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700')
+
+  // ----------------  THE FONTS
+
+  h1, h2, h3, h4, h5, h6
+    font-family: 'Oswald', sans-serif
+
+
+  h1
+    font-size: 2rem
+    margin-bottom: .5em
+
+
+  p
+    font-family: 'Roboto', sans-serif
+    font-size: .8rem
+
+
+  // ----------------  LAYOUT
+
+  .container
+    max-width: 1024px
+    width: 90%
+    margin: 0 auto
+
+
+  // ----------------  THE FONTS
+
+  $border-color: rgba(black, .3)
+
+  .timelineBox
+    padding: 3em 2em 2em
+    position: relative
+    color: rgba(black, .7)
+    border-left: 2px solid $border-color
+    text-align: left
+
+    p
+      font-size: 1rem
+
+
+    &::before
+      content: attr(date-is)
+      position: absolute
+      left: 2em
+      font-weight: bold
+      top: 1.3em
+      display: block
+      font-family: 'Roboto', sans-serif
+      font-weight: bold
+      font-size: .785rem
+      color: $colorBG
+
+
+    &::after
+      width: 10px
+      height: 10px
+      display: block
+      top: 1em
+      position: absolute
+      left: -7px
+      border-radius: 10px
+      content: ''
+      border: 2px solid $colorBG
+      background: white
+
+
+    &:last-child
+      border-image: linear-gradient(to bottom, $border-color 60%, rgba($border-color, 0)) 1 100%

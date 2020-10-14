@@ -2,6 +2,8 @@ $(document).ready(function (){
 
     var isBarDevOn=0;
     var isBarSoftOn=0;
+    var isBarLingOn=0;
+    var isBarDiversOn=0
     var compActuelle=0;
 
     // cache les div au chargement de la page
@@ -11,6 +13,8 @@ $(document).ready(function (){
     $('.experienceAll').hide();
     $('.portfolioAll').hide();
     $('.containerBarSoft').hide();
+    $('.containerBarLing').hide();
+    $('.containerBarDivers').hide();
 
     // calcul auto du line height
     autoLine();
@@ -28,7 +32,7 @@ $(document).ready(function (){
         if($('.competenceAll').is(":hidden")) {
             hideAll(1);
             $('.competenceAll').show("slow");
-            barDev();
+            changerParagraphe(compActuelle);
         }
     });
 
@@ -38,7 +42,6 @@ $(document).ready(function (){
         if($('.formationAll').is(":hidden")) {
             hideAll(1);
             $('.formationAll').show("slow");
-            barSoft();
         }
     });
 
@@ -109,13 +112,17 @@ $(document).ready(function (){
     function changerParagraphe(n){
         $('.containerBar').children().hide("fast");
         if(n==0){
+            barDev();
             $('.containerBarDev').show("fast");
         } else if(n==1){
+            barSoft();
             $('.containerBarSoft').show("fast");
         } else if(n==2){
-
+            barLing();
+            $('.containerBarLing').show("fast");
         }else if(n==3){
-
+            barDivers();
+            $('.containerBarDivers').show("fast");
         }
     }
 
@@ -195,7 +202,7 @@ $(document).ready(function (){
                     });
                     bar7.animate(0.8);
                     isBarDevOn++;
-                }, 1000);
+                }, 300);
         }
     }
 
@@ -204,7 +211,7 @@ $(document).ready(function (){
             setTimeout(
                 function () {
                     // software
-                    var ba8 = new ProgressBar.Line('.eclipse', {
+                    var bar8 = new ProgressBar.Line('.eclipse', {
                         easing: 'easeInOut',
                         color: '#ff9a3c',
                         strokeWidth: 1.5,
@@ -275,7 +282,87 @@ $(document).ready(function (){
                     });
                     bar14.animate(0.8);
                     isBarSoftOn++;
-                }, 1000);
+                }, 300);
+        }
+    }
+
+    function barLing(){
+        if(isBarLingOn==0) {
+            setTimeout(
+                function () {
+                    // software
+                    var bar15 = new ProgressBar.Line('.anglais', {
+                        easing: 'easeInOut',
+                        color: '#ff9a3c',
+                        strokeWidth: 1.5,
+                        trailColor: '#155263',
+                        duration: 2300,
+                        easing: 'easeIn',
+                        svgStyle: {display: 'inline-block'}
+                    });
+                    bar15.animate(0.88);
+                    var bar16 = new ProgressBar.Line('.allemand', {
+                        easing: 'easeInOut',
+                        color: '#ff9a3c',
+                        strokeWidth: 1.5,
+                        trailColor: '#155263',
+                        duration: 2300,
+                        easing: 'easeIn',
+                        svgStyle: {display: 'inline-block'}
+                    });
+                    bar16.animate(0.5);
+                    var bar17 = new ProgressBar.Line('.chinois', {
+                        easing: 'easeInOut',
+                        color: '#ff9a3c',
+                        strokeWidth: 1.5,
+                        trailColor: '#155263',
+                        duration: 2300,
+                        easing: 'easeIn',
+                        svgStyle: {display: 'inline-block'}
+                    });
+                    bar17.animate(0.2);
+                    isBarLingOn++;
+                }, 300);
+        }
+    }
+
+    function barDivers(){
+        if(isBarDiversOn==0) {
+            setTimeout(
+                function () {
+                    // software
+                    var bar18 = new ProgressBar.Line('.hotline', {
+                        easing: 'easeInOut',
+                        color: '#ff9a3c',
+                        strokeWidth: 1.5,
+                        trailColor: '#155263',
+                        duration: 2300,
+                        easing: 'easeIn',
+                        svgStyle: {display: 'inline-block'}
+                    });
+                    bar18.animate(0.97);
+                    var bar19 = new ProgressBar.Line('.gdeprojet', {
+                        easing: 'easeInOut',
+                        color: '#ff9a3c',
+                        strokeWidth: 1.5,
+                        trailColor: '#155263',
+                        duration: 2300,
+                        easing: 'easeIn',
+                        svgStyle: {display: 'inline-block'}
+                    });
+                    bar19.animate(0.7);
+                    var bar20 = new ProgressBar.Line('.voltaire', {
+                        easing: 'easeInOut',
+                        color: '#ff9a3c',
+                        strokeWidth: 1.5,
+                        trailColor: '#155263',
+                        duration: 2300,
+                        easing: 'easeIn',
+                        svgStyle: {display: 'inline-block'}
+                    });
+                    bar20.animate(0.75);
+                    isBarDiversOn++;
+                }, 300);
         }
     }
 
