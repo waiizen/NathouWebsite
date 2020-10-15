@@ -9,6 +9,7 @@ $ligneTopContent: 1
 $ligneBottomContent: 10
 $police: 'Montserrat', sans-serif
 $police2: sans-serif
+$police3: 'Open Sans', sans-serif
 
 body, html
   margin: 0
@@ -71,7 +72,6 @@ body, html
   grid-row: 1 / 3
   background-color: #f6f6f6
   border-right: 20px solid $colorHoverClair
-  padding-left: 10%
 
 .experience
   grid-column: 1 / 8
@@ -91,10 +91,10 @@ body, html
   background-color: #efefef
   border-right: 20px solid $colorHover
 
-.portfolio:before, .formation:before
+.portfolio:before, .experience:before
   background-color: $colorHover
 
-.experience:before, .competence:before
+.competence:before, .formation:before
   background-color: $colorHoverClair
 
 .box
@@ -171,10 +171,33 @@ body, html
 // EXPERIENCE
 
 .experienceAll
-  img
-    float: right
-    width: 20%
-    height: auto
+  text-align: left
+  & h1
+    text-align: center
+  & .experienceBox
+    padding: 1% 2% 2% 2%
+    background-color: $colorBG
+    color: white
+    box-shadow: 7px 7px 16px 1px rgba(0,0,0,0.75)
+    transition: 300ms ease-in all
+    margin-bottom: 2%
+    & p
+      font-family: $police
+    & p:first-of-type
+      color: $colorHover
+      font-weight: 700
+    & h1
+      margin-bottom: 2%
+      text-align: left
+    & .suspension
+      color: $colorHoverClair
+      text-align: center
+      margin-bottom: 0%
+      padding-bottom: 0%
+  & .experienceBox:hover
+    transform: scale(1.02)
+
+
 
 // FORMATION ALL
 
@@ -224,3 +247,49 @@ body, html
       background: white
     &:last-child
       border-image: linear-gradient(to bottom, grey 60%, rgba(grey, 0)) 1 100%
+
+// PORTFOLIO ALL
+.portfolioAll
+  & .listeProjet
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-around
+    align-content: space-around
+  & .projet
+    background-color: white
+    color: black
+    flex-basis: auto
+    width: 40%
+    margin-bottom: 5%
+    box-shadow: 7px 7px 16px 1px rgba(0,0,0,0.75)
+    transition: 300ms ease-in all
+    & img
+      width: 100%
+      height: 40%
+    & .projetContent
+      text-align: left
+      padding: 0% 5% 0% 5%
+      & hr
+        color: white
+      & h1
+        margin: 0%
+        padding: 0%
+        text-align: center
+        font-size: 120%
+      & .techno
+        text-align: center
+        color: black
+        font-style: italic
+      & p
+        font-size: 80%
+      & .techList
+        text-align: center
+      & .tech
+        display: inline-block
+        padding: 2%
+        background-color: $colorHoverClair
+        border-radius: 5px 10px 5px 10px
+        color: black
+  & .projet:hover
+    transform: scale(1.1)

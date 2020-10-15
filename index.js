@@ -74,6 +74,18 @@ $(document).ready(function (){
     $(".fa-arrow-circle-left").click(function(){
         changerTitre(-1);
     })
+    $('.experienceBox').each(function(){$(this).children().last().hide();})
+    // click sur l'experience
+    $('.experienceBox').css('cursor', 'pointer');
+    $('.experienceBox').click(function(){
+        if($(this).children().last().is(':hidden')){
+            $(this).children().last().show("slow");
+            $(this).find('.suspension').hide("fast");
+        } else {
+            $(this).children().last().hide("slow");
+            $(this).find('.suspension').show("fast");
+        }
+    })
 
     function autoLine(){
         $(".box").css('line-height', ($(".box").css('height')));
