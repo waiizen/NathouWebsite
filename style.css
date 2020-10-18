@@ -15,24 +15,24 @@ body, html {
 .colorBGtop {
   grid-column: 7/9;
   grid-row: 1/2;
-  background-color: #155263;
+  background-color: #14263D;
 }
 
 .colorBGleft {
   grid-row: 4/5;
-  background-color: #155263;
+  background-color: #14263D;
 }
 
 .colorBGbottom {
   grid-column: 3/5;
   grid-row: 10/11;
-  background-color: #155263;
+  background-color: #14263D;
 }
 
 .colorBGright {
   grid-column: 10/11;
   grid-row: 7/8;
-  background-color: #155263;
+  background-color: #14263D;
 }
 
 .containerContent {
@@ -68,36 +68,51 @@ body, html {
   grid-column: 1/8;
   grid-row: 1/3;
   background-color: #f6f6f6;
-  border-right: 20px solid #ffc93c;
+  border-right: 20px solid #DFC39F;
 }
 
 .experience {
   grid-column: 1/8;
   grid-row: 3/5;
   background-color: #efefef;
-  border-right: 20px solid #ff9a3c;
+  border-right: 20px solid #CB9662;
 }
 
 .formation {
   grid-column: 1/8;
   grid-row: 5/7;
   background-color: #f6f6f6;
-  border-right: 20px solid #ffc93c;
+  border-right: 20px solid #DFC39F;
 }
 
 .portfolio {
   grid-column: 1/8;
   grid-row: 7/9;
   background-color: #efefef;
-  border-right: 20px solid #ff9a3c;
+  border-right: 20px solid #CB9662;
 }
 
 .portfolio:before, .experience:before {
-  background-color: #ff9a3c;
+  background-color: #CB9662;
 }
 
 .competence:before, .formation:before {
-  background-color: #ffc93c;
+  background-color: #DFC39F;
+}
+
+.contact {
+  margin-top: 3%;
+  font-size: 220%;
+}
+.contact a:not(:first-of-type) {
+  margin-left: 5%;
+}
+.contact i:hover {
+  color: #CB9662;
+}
+.contact a {
+  text-decoration: none;
+  color: black;
 }
 
 .box {
@@ -126,7 +141,7 @@ body, html {
 }
 
 .important {
-  color: #ff9a3c;
+  color: #CB9662;
   font-weight: 600;
 }
 
@@ -138,8 +153,15 @@ body, html {
 .close img {
   width: 5%;
   height: auto;
+  transition: 300ms ease-out;
+}
+.close img:hover {
+  transform: scale(1.2);
 }
 
+.about {
+  margin-bottom: 3%;
+}
 .about h2 {
   font-weight: lighter;
 }
@@ -164,17 +186,26 @@ body, html {
 }
 .competenceAll h1 {
   text-align: center;
+  margin-bottom: 7%;
 }
 .competenceAll .iconeFleche {
   color: red;
   transition: 100ms ease-in all;
+  font-size: 130%;
 }
 .competenceAll .iconeFleche:hover {
   transform: scale(1.2);
 }
+.competenceAll .titreCompetence {
+  font-size: 120%;
+}
+.competenceAll .pTitreComp {
+  margin-bottom: 5%;
+}
 
 .containerBar .left {
   float: left;
+  margin-bottom: 1%;
 }
 .containerBar p {
   margin-bottom: 0%;
@@ -184,11 +215,14 @@ body, html {
   font-style: italic;
 }
 .containerBar .titreDivers {
-  color: #ff9a3c;
+  color: #CB9662;
   font-weight: bold;
 }
 .containerBar .end {
   text-align: left;
+}
+.containerBar .bar {
+  margin-bottom: 3%;
 }
 
 .experienceAll {
@@ -199,7 +233,7 @@ body, html {
 }
 .experienceAll .experienceBox {
   padding: 1% 2% 2% 2%;
-  background-color: #155263;
+  background-color: #14263D;
   color: white;
   box-shadow: 7px 7px 16px 1px rgba(0, 0, 0, 0.75);
   transition: 300ms ease-in all;
@@ -209,7 +243,7 @@ body, html {
   font-family: "Montserrat", sans-serif;
 }
 .experienceAll .experienceBox p:first-of-type {
-  color: #ff9a3c;
+  color: #CB9662;
   font-weight: 700;
 }
 .experienceAll .experienceBox h1 {
@@ -217,7 +251,7 @@ body, html {
   text-align: left;
 }
 .experienceAll .experienceBox .suspension {
-  color: #ffc93c;
+  color: #DFC39F;
   text-align: center;
   margin-bottom: 0%;
   padding-bottom: 0%;
@@ -259,7 +293,7 @@ body, html {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 0.785rem;
-  color: #155263;
+  color: #14263D;
 }
 .formationAll .timelineBox::after, .experienceAll .timelineBox::after {
   width: 10px;
@@ -270,7 +304,7 @@ body, html {
   left: -7px;
   border-radius: 10px;
   content: "";
-  border: 2px solid #155263;
+  border: 2px solid #14263D;
   background: white;
 }
 .formationAll .timelineBox:last-child, .experienceAll .timelineBox:last-child {
@@ -327,7 +361,7 @@ body, html {
 .portfolioAll .projet .projetContent .tech {
   display: inline-block;
   padding: 2%;
-  background-color: #ffc93c;
+  background-color: #DFC39F;
   border-radius: 5px 10px 5px 10px;
   color: black;
   margin-bottom: 8%;
@@ -346,7 +380,7 @@ body, html {
 }
 .portfolioAll .projet .projetContent .icone:hover {
   transform: rotate(180deg);
-  color: #ffc93c;
+  color: #DFC39F;
 }
 .portfolioAll .projet:hover {
   transform: scale(1.1);

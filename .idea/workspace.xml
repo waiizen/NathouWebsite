@@ -20,9 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c96601a7-8935-4910-9883-acc0770e6807" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/images/appTerminal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallscreen.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/appMeteo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/appMeteo.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/style.sass" afterDir="false" />
@@ -69,12 +73,13 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Nathan\WebstormProjects\NathouWebsite\images" />
-      <recent name="C:\Users\Nathan\WebstormProjects\NathouWebsite" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Nathan\WebstormProjects\NathouWebsite\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Waiizen\Desktop\NathouWebsite\images" />
+      <recent name="C:\Users\Nathan\WebstormProjects\NathouWebsite\images" />
+      <recent name="C:\Users\Nathan\WebstormProjects\NathouWebsite" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -215,9 +220,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1602839298605" />
-    <state x="665" y="289" key="EditFileWatcherDialog" timestamp="1601976332052">
+    <state x="665" y="289" key="EditFileWatcherDialog" timestamp="1602965982210">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="665" y="289" key="EditFileWatcherDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602965982210" />
     <state x="665" y="289" key="EditFileWatcherDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601976332052" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1601979621621">
       <screen x="0" y="0" width="1920" height="1040" />

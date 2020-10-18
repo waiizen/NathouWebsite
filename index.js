@@ -145,7 +145,7 @@ $(document).ready(function (){
                     // dev
                     var bar = new ProgressBar.Line('.html', {
                         easing: 'easeInOut',
-                        color: '#ff9a3c',
+                        color: '#CB9662',
                         strokeWidth: 1.5,
                         trailColor: '#155263',
                         duration: 2300,
@@ -155,7 +155,7 @@ $(document).ready(function (){
                     bar.animate(0.98);
                     var bar2 = new ProgressBar.Line('.css', {
                         easing: 'easeInOut',
-                        color: '#ff9a3c',
+                        color: '#CB9662',
                         strokeWidth: 1.5,
                         trailColor: '#155263',
                         duration: 2300,
@@ -165,7 +165,7 @@ $(document).ready(function (){
                     bar2.animate(0.98);
                     var bar3 = new ProgressBar.Line('.js', {
                         easing: 'easeInOut',
-                        color: '#ff9a3c',
+                        color: '#CB9662',
                         strokeWidth: 1.5,
                         trailColor: '#155263',
                         duration: 2300,
@@ -175,7 +175,7 @@ $(document).ready(function (){
                     bar3.animate(0.82);
                     var bar4 = new ProgressBar.Line('.php', {
                         easing: 'easeInOut',
-                        color: '#ff9a3c',
+                        color: '#CB9662',
                         strokeWidth: 1.5,
                         trailColor: '#155263',
                         duration: 2300,
@@ -185,7 +185,7 @@ $(document).ready(function (){
                     bar4.animate(0.5);
                     var bar5 = new ProgressBar.Line('.java', {
                         easing: 'easeInOut',
-                        color: '#ff9a3c',
+                        color: '#CB9662',
                         strokeWidth: 1.5,
                         trailColor: '#155263',
                         duration: 2300,
@@ -195,7 +195,7 @@ $(document).ready(function (){
                     bar5.animate(0.7);
                     var bar6 = new ProgressBar.Line('.c', {
                         easing: 'easeInOut',
-                        color: '#ff9a3c',
+                        color: '#CB9662',
                         strokeWidth: 1.5,
                         trailColor: '#155263',
                         duration: 2300,
@@ -205,7 +205,7 @@ $(document).ready(function (){
                     bar6.animate(0.5);
                     var bar7 = new ProgressBar.Line('.sql', {
                         easing: 'easeInOut',
-                        color: '#ff9a3c',
+                        color: '#CB9662',
                         strokeWidth: 1.5,
                         trailColor: '#155263',
                         duration: 2300,
@@ -225,7 +225,7 @@ $(document).ready(function (){
                     // software
                     var bar8 = new ProgressBar.Line('.eclipse', {
                         easing: 'easeInOut',
-                        color: '#ff9a3c',
+                        color: '#CB9662',
                         strokeWidth: 1.5,
                         trailColor: '#155263',
                         duration: 2300,
@@ -235,7 +235,7 @@ $(document).ready(function (){
                     bar8.animate(0.8);
                     var bar9 = new ProgressBar.Line('.netbeans', {
                         easing: 'easeInOut',
-                        color: '#ff9a3c',
+                        color: '#CB9662',
                         strokeWidth: 1.5,
                         trailColor: '#155263',
                         duration: 2300,
@@ -245,7 +245,7 @@ $(document).ready(function (){
                     bar9.animate(0.7);
                     var bar10 = new ProgressBar.Line('.vs', {
                         easing: 'easeInOut',
-                        color: '#ff9a3c',
+                        color: '#CB9662',
                         strokeWidth: 1.5,
                         trailColor: '#155263',
                         duration: 2300,
@@ -255,7 +255,7 @@ $(document).ready(function (){
                     bar10.animate(0.5);
                     var bar11 = new ProgressBar.Line('.github', {
                         easing: 'easeInOut',
-                        color: '#ff9a3c',
+                        color: '#CB9662',
                         strokeWidth: 1.5,
                         trailColor: '#155263',
                         duration: 2300,
@@ -265,7 +265,7 @@ $(document).ready(function (){
                     bar11.animate(0.67);
                     var bar12 = new ProgressBar.Line('.svn', {
                         easing: 'easeInOut',
-                        color: '#ff9a3c',
+                        color: '#CB9662',
                         strokeWidth: 1.5,
                         trailColor: '#155263',
                         duration: 2300,
@@ -275,7 +275,7 @@ $(document).ready(function (){
                     bar12.animate(0.75);
                     var bar13 = new ProgressBar.Line('.office', {
                         easing: 'easeInOut',
-                        color: '#ff9a3c',
+                        color: '#CB9662',
                         strokeWidth: 1.5,
                         trailColor: '#155263',
                         duration: 2300,
@@ -285,7 +285,7 @@ $(document).ready(function (){
                     bar13.animate(1.0);
                     var bar14 = new ProgressBar.Line('.linux', {
                         easing: 'easeInOut',
-                        color: '#ff9a3c',
+                        color: '#CB9662',
                         strokeWidth: 1.5,
                         trailColor: '#155263',
                         duration: 2300,
@@ -305,7 +305,7 @@ $(document).ready(function (){
                     // software
                     var bar15 = new ProgressBar.Line('.anglais', {
                         easing: 'easeInOut',
-                        color: '#ff9a3c',
+                        color: '#CB9662',
                         strokeWidth: 1.5,
                         trailColor: '#155263',
                         duration: 2300,
@@ -315,7 +315,7 @@ $(document).ready(function (){
                     bar15.animate(0.88);
                     var bar16 = new ProgressBar.Line('.allemand', {
                         easing: 'easeInOut',
-                        color: '#ff9a3c',
+                        color: '#CB9662',
                         strokeWidth: 1.5,
                         trailColor: '#155263',
                         duration: 2300,
@@ -325,7 +325,7 @@ $(document).ready(function (){
                     bar16.animate(0.5);
                     var bar17 = new ProgressBar.Line('.chinois', {
                         easing: 'easeInOut',
-                        color: '#ff9a3c',
+                        color: '#CB9662',
                         strokeWidth: 1.5,
                         trailColor: '#155263',
                         duration: 2300,
@@ -345,7 +345,7 @@ $(document).ready(function (){
                     // software
                     var bar18 = new ProgressBar.Line('.hotline', {
                         easing: 'easeInOut',
-                        color: '#ff9a3c',
+                        color: '#CB9662',
                         strokeWidth: 1.5,
                         trailColor: '#155263',
                         duration: 2300,
@@ -355,7 +355,7 @@ $(document).ready(function (){
                     bar18.animate(0.97);
                     var bar19 = new ProgressBar.Line('.gdeprojet', {
                         easing: 'easeInOut',
-                        color: '#ff9a3c',
+                        color: '#CB9662',
                         strokeWidth: 1.5,
                         trailColor: '#155263',
                         duration: 2300,
@@ -365,7 +365,7 @@ $(document).ready(function (){
                     bar19.animate(0.7);
                     var bar20 = new ProgressBar.Line('.voltaire', {
                         easing: 'easeInOut',
-                        color: '#ff9a3c',
+                        color: '#CB9662',
                         strokeWidth: 1.5,
                         trailColor: '#155263',
                         duration: 2300,

@@ -21,7 +21,7 @@ body, html
   grid-template-columns: repeat(10, 1fr)
   grid-template-rows: repeat(10, 1fr)
   width: 100%
-  min-height: 100vh
+  height: 100vh
 
 .colorBGtop
   grid-column: 7 / 9
@@ -56,7 +56,9 @@ body, html
   grid-row: #{$ligneTopContent} / #{$ligneBottomContent}
   border-right: 2px solid black
   text-align: center
+  font-size: 1vh
   & img
+    margin-top: 2vh
     width: 50%
     height: auto
 
@@ -66,6 +68,9 @@ body, html
   display: grid
   grid-template-columns: repeat(7, 1fr)
   grid-template-rows: repeat(8, 1fr)
+  font-size: 1vh
+  & .iconeBox
+    visibility: hidden
 
 .competence
   grid-column: 1 / 8
@@ -98,7 +103,7 @@ body, html
   background-color: $colorHoverClair
 
 .contact
-  margin-top: 3%
+  margin-top: 3vh
   font-size: 220%
   & a:not(:first-of-type)
     margin-left: 5%
@@ -114,7 +119,6 @@ body, html
   transform: translateZ(0)
   transition: color 1000ms
   font-family: $police
-  font-size: 200%
   &:before
     content: ""
     position: absolute
@@ -139,7 +143,7 @@ body, html
   padding-top: 1%
   padding-right: 1%
   & img
-    width: 5%
+    width: 10%
     height: auto
     transition: 300ms ease-out
   & img:hover
@@ -157,8 +161,11 @@ body, html
   & img
     width: 40%
     height: auto
-
-
+    margin-bottom: 1vh
+  & h2
+    margin-bottom: 3vh
+  & .p1, .p2, .p3
+    margin-bottom: 2vh
 
 .competenceAll, .formationAll, .experienceAll, .portfolioAll
   padding: 0% 4% 4% 4%
@@ -168,7 +175,7 @@ body, html
     text-align: center
   & h1
     text-align: center
-    margin-bottom: 7%
+    margin-bottom: 4vh
   & .iconeFleche
     color: red
     transition: 100ms ease-in all
@@ -178,7 +185,7 @@ body, html
   & .titreCompetence
     font-size: 120%
   & .pTitreComp
-    margin-bottom: 5%
+    margin-bottom: 4vh
 
 
 .containerBar
@@ -196,7 +203,7 @@ body, html
   & .end
     text-align: left
   & .bar
-    margin-bottom: 3%
+    margin-bottom: 3vh
 
 // EXPERIENCE
 
@@ -204,26 +211,32 @@ body, html
   text-align: left
   & h1
     text-align: center
+    margin-bottom: 4vh
   & .experienceBox
-    padding: 1% 2% 2% 2%
+    padding: 1vh
     background-color: $colorBG
     color: white
     box-shadow: 7px 7px 16px 1px rgba(0,0,0,0.75)
     transition: 300ms ease-in all
-    margin-bottom: 2%
+    margin-bottom: 2vh
     & p
       font-family: $police
     & p:first-of-type
       color: $colorHover
       font-weight: 700
+      font-size: 0.8vh
     & h1
+      font-size: 1.5vh
       margin-bottom: 2%
       text-align: left
+    & h3
+      font-size: 1vh
     & .suspension
       color: $colorHoverClair
       text-align: center
       margin-bottom: 0%
       padding-bottom: 0%
+      font-size: 0.5vh
   & .experienceBox:hover
     transform: scale(1.02)
 
@@ -231,13 +244,21 @@ body, html
 
 // FORMATION ALL
 
-.formationAll, .experienceAll
+.formationAll
+  height: 71vh
+  overflow-y: scroll
+  margin-right: 1vh
+  &::-webkit-scrollbar
+    width: 0.5vh
+    height: 0.5vh
+  &::-webkit-scrollbar-thumb
+    background-color: lightgrey
+
   & h1
-    font-size: 2rem
     margin-bottom: .5em
   & p
     font-family: 'Roboto', sans-serif
-    font-size: .8rem
+    font-size: .8vh
   // ----------------  LAYOUT
   & .container
     max-width: 1024px
@@ -252,7 +273,7 @@ body, html
     border-left: 2px solid grey
     text-align: left
     & p
-      font-size: 1rem
+      font-size: 1vh
     &::before
       content: attr(date-is)
       position: absolute
@@ -262,7 +283,7 @@ body, html
       display: block
       font-family: 'Roboto', sans-serif
       font-weight: bold
-      font-size: .785rem
+      font-size: 1vh
       color: $colorBG
     &::after
       width: 10px
@@ -277,25 +298,37 @@ body, html
       background: white
     &:last-child
       border-image: linear-gradient(to bottom, grey 60%, rgba(grey, 0)) 1 100%
+    & h1
+      font-size: 1.5vh
 
 // PORTFOLIO ALL
 .portfolioAll
+  height: 71vh
+  margin-right: 1vh
+  overflow-y: scroll
+  &::-webkit-scrollbar
+    width: 0.5vh
+    height: 0.5vh
+  &::-webkit-scrollbar-thumb
+    background-color: lightgrey
   & .titre
     margin-bottom: 8%
   & .listeProjet
+    padding-right: 1vh
     display: flex
     flex-direction: row
     flex-wrap: wrap
-    justify-content: space-around
-    align-content: space-around
+    justify-content: center
+    align-content: center
   & .projet
     background-color: white
     color: black
     flex-basis: auto
-    width: 40%
-    margin-bottom: 5%
-    box-shadow: 7px 7px 16px 1px rgba(0,0,0,0.75)
+    width: 40vh
+    height: 27vh
+    margin-bottom: 3vh
     transition: all 300ms ease-in
+    border-bottom: 1px solid $colorHoverClair
     & img
       width: 100%
       height: 40%

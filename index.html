@@ -1,9 +1,11 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="all and (min-width: 813px)"  href="style.css">
+    <link rel="stylesheet" media="all and (max-width: 812px)" href="smallscreen.css" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/6af4ab5eb9.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -28,21 +30,22 @@
                     <div class="about">
                         <h1>Nathan FERRER</h1>
                         <h2>Ingénieur Informatique, spé e-Santé</h2>
-                        <p>Bonjour ! Moi c'est <span class="important">Nathan</span>, un <span class="important">développeur WEB</span> et <span class="important">étudiant Ingénieur dans l'informatique</span>, avec une option dans l'e-Santé.<br/><br/>
-                            Passionné depuis plusieurs années par l'<span class="important">informatique et la programmation</span>, j'ai commencé par le <span class="important">dev WEB</span> il y a environ 8ans.
+                        <p class="p1">Bonjour ! Moi c'est <span class="important">Nathan</span>, un <span class="important">développeur WEB</span> et <span class="important">étudiant Ingénieur dans l'informatique</span>, avec une option dans l'e-Santé.</p>
+                        <p class="p2">Passionné depuis plusieurs années par l'<span class="important">informatique et la programmation</span>, j'ai commencé par le <span class="important">dev WEB</span> il y a environ 8ans.
                             Depuis, j'ai pu découvrir d'autres domaines, comme le <span class="important">développement logiciel</span> et la <span class="important">cybersécurité</span>, domaine dans lequel je
-                            souhaite me spécaliser à l'avenir.<br/><br/>
-                            J'ai développé <span class="important">plusieurs projets dans différents languages</span>, que ce soit pour moi, pour des connaissances ou meme
+                            souhaite me spécaliser à l'avenir.</p>
+                        <p class="p3">J'ai développé <span class="important">plusieurs projets dans différents languages</span>, que ce soit pour moi, pour des connaissances ou meme
                             en collaboration avec d'autres développeurs. <span class="important">Alors n'hésite pas à y jeter un coup d'oeil !</span></p>
                     </div>
+                    <hr/>
                     <div class="contact">
-                        Contact moi ici
+                        <a href="https://www.linkedin.com/in/nathan-ferrer-603a5516b/" target="_blank"><i class="fab fa-linkedin"></i></a><a href="https://github.com/waiizen" target="_blank"><i class="fab fa-github"></i></a><a href="mailto:nathanferrer.nf@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
                 <!-- div competences -->
                 <div class="competenceAll">
                     <h1>Mes compétences</h1>
-                    <p><i class="fas fa-arrow-circle-left iconeFleche"></i>&nbsp;&nbsp;<span class="titreCompetence">DEVELOPPEMENT</span>&nbsp;&nbsp;<i class="fas fa-arrow-circle-right iconeFleche"></i></p>
+                    <p class="pTitreComp"><i class="fas fa-arrow-circle-left iconeFleche"></i>&nbsp;&nbsp;<span class="titreCompetence">DEVELOPPEMENT</span>&nbsp;&nbsp;<i class="fas fa-arrow-circle-right iconeFleche"></i></p>
                     <div class="containerBar">
                         <div class="containerBarDev">
                             <p class="left">HTML - &nbsp;&nbsp;<i class="far fa-calendar-alt icone"></i><span class="date">&nbsp;7 ans</span></p>
@@ -186,19 +189,19 @@
                             </div>
                         </article>
                         <article class="projet">
-                            <img src="images/appMeteo.jpg">
+                            <img src="images/appTerminal.png">
                             <div class="projetContent">
-                                <h1>NathouMeteo</h1>
+                                <h1>NathouTerminal</h1>
                                 <hr/>
-                                <p>Retrouvez la qualité des prévisions météo de METEO FRANCE sur votre application</p>
+                                <p>Mon site, mais avec un design semblable à un terminal !</p>
                                 <hr/>
                                 <div class="techList">
                                     <div class="tech">HTML</div>
                                     <div class="tech">CSS</div>
-                                    <div class="tech">JQUERY</div>
+                                    <div class="tech">JS</div>
                                 </div>
                                 <div class="end">
-                                    <i class="fas fa-sign-in-alt fa-2x icone"></i>&nbsp;&nbsp;&nbsp;<i class="fab fa-github fa-2x icone"></i>
+                                    <a href="https://nathan-ferrer.fr/terminal" target="_blank"><i class="fas fa-sign-in-alt fa-2x icone"></i></a>&nbsp;&nbsp;&nbsp;<i class="fab fa-github fa-2x icone"></i>
                                 </div>
                             </div>
                         </article>
@@ -223,10 +226,10 @@
                 </div>
             </div>
             <div class="contentRight">
-                <div class="competence box"><i class="fas fa-laptop-code"></i>&nbsp;Compétences</div>
-                <div class="experience box"><i class="fas fa-briefcase"></i>&nbsp;Expériences</div>
-                <div class="formation box"><i class="fas fa-graduation-cap"></i>&nbsp;Formation</div>
-                <div class="portfolio box"><i class="fas fa-laptop-house"></i>&nbsp;Portfolio</div>
+                <div class="competence box"><i class="fas fa-laptop-code iconeBox"></i>&nbsp;Compétences</div>
+                <div class="experience box"><i class="fas fa-briefcase iconeBox"></i>&nbsp;Expériences</div>
+                <div class="formation box"><i class="fas fa-graduation-cap iconeBox"></i>&nbsp;Formation</div>
+                <div class="portfolio box"><i class="fas fa-laptop-house iconeBox"></i>&nbsp;Portfolio</div>
             </div>
         </div>
     </div>
