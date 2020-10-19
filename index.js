@@ -4,7 +4,10 @@ $(document).ready(function (){
     var isBarSoftOn=0;
     var isBarLingOn=0;
     var isBarDiversOn=0
+    var isLangOn=0;
     var compActuelle=0;
+    var srcUSA = 'images/icoUSA.png';
+    var srcFRA = 'images/icoFRA.png';
 
     // cache les div au chargement de la page
     $('.close').hide();
@@ -15,9 +18,44 @@ $(document).ready(function (){
     $('.containerBarSoft').hide();
     $('.containerBarLing').hide();
     $('.containerBarDivers').hide();
+    $('.flagUSA').hide();
+    $('.flagFRA').hide();
+    $('.containerBaseFR').hide();
 
     // calcul auto du line height
     autoLine();
+
+    // click sur icone translate
+    $('.flag').css('cursor', 'pointer');
+    $('.flag').click(function(){
+        if(isLangOn==0) {
+            $('.flagUSA').show("slow");
+            $('.flagFRA').show("slow");
+            isLangOn++;
+        } else {
+            $('.flagUSA').hide("slow");
+            $('.flagFRA').hide("slow");
+            isLangOn=0;
+        }
+    });
+
+    $('.flagUSA').css('cursor', 'pointer');
+    $('.flagUSA').click(function(){
+        $('.containerBaseFR').hide("fast");
+        $('.containerBase').show("fast");
+        $('.flagUSA').hide("slow");
+        $('.flagFRA').hide("slow");
+        isLangOn=0;
+    });
+
+    $('.flagFRA').css('cursor', 'pointer');
+    $('.flagFRA').click(function(){
+        $('.containerBase').hide("fast");
+        $('.containerBaseFR').show("fast");
+        $('.flagUSA').hide("slow");
+        $('.flagFRA').hide("slow");
+        isLangOn=0;
+    });
 
     // click sur close
     $(".close").css('cursor', 'pointer');

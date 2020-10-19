@@ -4,7 +4,7 @@ body, html {
   font-family: "Montserrat", sans-serif;
 }
 
-.containerBase {
+.containerBase, .containerBaseFR {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(10, 1fr);
@@ -145,6 +145,11 @@ body, html {
   font-weight: 600;
 }
 
+.important2 {
+  color: #e63946;
+  font-weight: 600;
+}
+
 .close {
   text-align: right;
   padding-top: 1%;
@@ -164,17 +169,22 @@ body, html {
 }
 .about h2 {
   font-weight: lighter;
+  margin-bottom: 5%;
 }
 .about p {
   text-align: justify;
 }
 
 .aboutAll {
-  padding: 8% 4% 4% 4%;
+  padding: 3% 4% 4% 4%;
 }
 .aboutAll img {
   width: 40%;
   height: auto;
+}
+
+.anglais {
+  text-align: left;
 }
 
 .competenceAll, .formationAll, .experienceAll, .portfolioAll {
@@ -384,6 +394,39 @@ body, html {
 }
 .portfolioAll .projet:hover {
   transform: scale(1.1);
+}
+
+.inactiveMixin {
+  content: "";
+  position: absolute;
+  display: block;
+}
+
+.beforeAnimation {
+  -moz-transition: 0.2s cubic-bezier(0.24, 0, 0.5, 1);
+  -o-transition: 0.2s cubic-bezier(0.24, 0, 0.5, 1);
+  -webkit-transition: 0.2s cubic-bezier(0.24, 0, 0.5, 1);
+  transition: 0.2s cubic-bezier(0.24, 0, 0.5, 1);
+}
+
+.afterAnimation {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 4px 0px 0 rgba(0, 0, 0, 0.04), 0 4px 9px rgba(0, 0, 0, 0.13), 0 3px 3px rgba(0, 0, 0, 0.05);
+  -moz-transition: 0.35s cubic-bezier(0.54, 1.6, 0.5, 1);
+  -o-transition: 0.35s cubic-bezier(0.54, 1.6, 0.5, 1);
+  -webkit-transition: 0.35s cubic-bezier(0.54, 1.6, 0.5, 1);
+  transition: 0.35s cubic-bezier(0.54, 1.6, 0.5, 1);
+}
+
+.anglais {
+  text-align: center;
+  position: absolute;
+}
+.anglais img {
+  width: 5%;
+  float: left;
+}
+.anglais .flagFRA, .anglais .flagUSA {
+  margin-left: 1%;
 }
 
 /*# sourceMappingURL=style.css.map */
