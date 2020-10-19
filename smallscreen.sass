@@ -16,7 +16,7 @@ body, html
   padding: 0
   font-family: $police
 
-.containerBase
+.containerBase, .containerBaseFR
   display: grid
   grid-template-columns: repeat(10, 1fr)
   grid-template-rows: repeat(10, 1fr)
@@ -138,6 +138,10 @@ body, html
   color: $colorHover
   font-weight: 600
 
+.important2
+  color: $colorRouge
+  font-weight: 600
+
 .close
   text-align: right
   padding-top: 1%
@@ -153,15 +157,17 @@ body, html
   margin-bottom: 3%
   & h2
     font-weight: lighter
+    margin-bottom: 5%
   & p
     text-align: justify
 
 .aboutAll
-  padding: 8% 4% 4% 4%
-  & img
+  padding: 3% 4% 4% 4%
+  & .imgMoi
     width: 40%
     height: auto
     margin-bottom: 1vh
+    margin-top: 8vh
   & h2
     margin-bottom: 3vh
   & .p1, .p2, .p3
@@ -371,3 +377,12 @@ body, html
         color: $colorHoverClair
   & .projet:hover
     transform: scale(1.1)
+
+.anglais
+  text-align: left
+  position: absolute
+  img
+    width: 10%
+    float: left
+  & .flagFRA, .flagUSA
+    margin-left: 1%

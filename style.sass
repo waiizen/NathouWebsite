@@ -159,7 +159,7 @@ body, html
 
 .aboutAll
   padding: 3% 4% 4% 4%
-  & img
+  & .imgMoi
     width: 40%
     height: auto
 
@@ -344,31 +344,6 @@ body, html
         color: $colorHoverClair
   & .projet:hover
     transform: scale(1.1)
-
-// TRANSLATE BUTTON
-$green: #2ecc71
-$lightgray: #c81e1e
-$background: #18d0b8
-
-.inactiveMixin
-  content: ""
-  position: absolute
-  display: block
-
-
-.beforeAnimation
-  -moz-transition: .2s cubic-bezier(.24, 0, .5, 1)
-  -o-transition: .2s cubic-bezier(.24, 0, .5, 1)
-  -webkit-transition: .2s cubic-bezier(.24, 0, .5, 1)
-  transition: .2s cubic-bezier(.24, 0, .5, 1)
-
-
-.afterAnimation
-  box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.1), 0 4px 0px 0 hsla(0, 0%, 0%, .04), 0 4px 9px hsla(0, 0%, 0%, .13), 0 3px 3px hsla(0, 0%, 0%, .05)
-  -moz-transition: .35s cubic-bezier(.54, 1.60, .5, 1)
-  -o-transition: .35s cubic-bezier(.54, 1.60, .5, 1)
-  -webkit-transition: .35s cubic-bezier(.54, 1.60, .5, 1)
-  transition: .35s cubic-bezier(.54, 1.60, .5, 1)
 
 .anglais
   text-align: center
