@@ -1,5 +1,10 @@
 $(document).ready(function (){
 
+    /*
+    ==========
+    VARIABLES
+    ==========
+     */
     var isBarDevOn=0;
     var isBarSoftOn=0;
     var isBarLingOn=0;
@@ -8,6 +13,12 @@ $(document).ready(function (){
     var compActuelle=0;
     var srcUSA = 'images/icoUSA.png';
     var srcFRA = 'images/icoFRA.png';
+
+    /*
+    ==========
+    PAGE GENERALE
+    ==========
+     */
 
     // cache les div au chargement de la page
     $('.close').hide();
@@ -24,6 +35,19 @@ $(document).ready(function (){
 
     // calcul auto du line height
     autoLine();
+
+    // click sur close
+    $(".close").css('cursor', 'pointer');
+    $('.close').click(function(){
+        hideAll(2);
+        $('.aboutAll').show("slow");
+    });
+
+    /*
+    ==========
+    ACCUEIL ALL
+    ==========
+     */
 
     // click sur icone translate
     $('.flag').css('cursor', 'pointer');
@@ -57,12 +81,11 @@ $(document).ready(function (){
         isLangOn=0;
     });
 
-    // click sur close
-    $(".close").css('cursor', 'pointer');
-    $('.close').click(function(){
-        hideAll(2);
-        $('.aboutAll').show("slow");
-    })
+    /*
+    ==========
+    COMPETENCES ALL
+    ==========
+     */
 
     // click sur competence
     $(".competence").css('cursor', 'pointer');
@@ -71,33 +94,6 @@ $(document).ready(function (){
             hideAll(1);
             $('.competenceAll').show("slow");
             changerParagraphe(compActuelle);
-        }
-    });
-
-    // click sur formation
-    $(".formation").css('cursor', 'pointer');
-    $(".formation").click(function (){
-        if($('.formationAll').is(":hidden")) {
-            hideAll(1);
-            $('.formationAll').show("slow");
-        }
-    });
-
-    // click sur experience
-    $(".experience").css('cursor', 'pointer');
-    $(".experience").click(function (){
-        if($('.experienceAll').is(":hidden")) {
-            hideAll(1);
-            $('.experienceAll').show("slow");
-        }
-    });
-
-    // click sur portfolio
-    $(".portfolio").css('cursor', 'pointer');
-    $(".portfolio").click(function (){
-        if($('.portfolioAll').is(":hidden")) {
-            hideAll(1);
-            $('.portfolioAll').show("slow");
         }
     });
 
@@ -112,7 +108,25 @@ $(document).ready(function (){
     $(".fa-arrow-circle-left").click(function(){
         changerTitre(-1);
     })
+
+    /*
+    ==========
+    EXPERIENCES ALL
+    ==========
+     */
+
+    // click sur experience
+    $(".experience").css('cursor', 'pointer');
+    $(".experience").click(function (){
+        if($('.experienceAll').is(":hidden")) {
+            hideAll(1);
+            $('.experienceAll').show("slow");
+        }
+    });
+
+    // cache toutes les descriptions
     $('.experienceBox').each(function(){$(this).children().last().hide();})
+
     // click sur l'experience
     $('.experienceBox').css('cursor', 'pointer');
     $('.experienceBox').click(function(){
@@ -125,10 +139,42 @@ $(document).ready(function (){
         }
     })
 
+    /*
+    ==========
+    PORTFOLIO ALL
+    ==========
+     */
+
+    // click sur formation
+    $(".formation").css('cursor', 'pointer');
+    $(".formation").click(function (){
+        if($('.formationAll').is(":hidden")) {
+            hideAll(1);
+            $('.formationAll').show("slow");
+        }
+    });
+
+    // click sur portfolio
+    $(".portfolio").css('cursor', 'pointer');
+    $(".portfolio").click(function (){
+        if($('.portfolioAll').is(":hidden")) {
+            hideAll(1);
+            $('.portfolioAll').show("slow");
+        }
+    });
+
+    /*
+    ==========
+    LISTE DES FONCTIONS
+    ==========
+     */
+
+    // auto calcul de la hauteur
     function autoLine(){
         $(".box").css('line-height', ($(".box").css('height')));
     }
 
+    // permet de clear la partie gauche
     function hideAll(n){
         if(n==1){
             if($('.close').is(':hidden')) $('.close').show("fast");

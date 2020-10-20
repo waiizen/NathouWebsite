@@ -11,6 +11,8 @@ $police: 'Montserrat', sans-serif
 $police2: sans-serif
 $police3: 'Open Sans', sans-serif
 
+// page generale
+
 body, html
   margin: 0
   padding: 0
@@ -97,17 +99,6 @@ body, html
 .competence:before, .formation:before
   background-color: $colorHoverClair
 
-.contact
-  margin-top: 3%
-  font-size: 220%
-  & a:not(:first-of-type)
-    margin-left: 5%
-  & i:hover
-    color: $colorHover
-  & a
-    text-decoration: none
-    color: black
-
 .box
   text-align: center
   position: relative
@@ -138,6 +129,22 @@ body, html
   color: $colorRouge
   font-weight: 600
 
+.competenceAll, .formationAll, .experienceAll, .portfolioAll
+  padding: 0% 4% 4% 4%
+
+// ACCUEIL
+
+.contact
+  margin-top: 3%
+  font-size: 220%
+  & a:not(:first-of-type)
+    margin-left: 5%
+  & i:hover
+    color: $colorHover
+  & a
+    text-decoration: none
+    color: black
+
 .close
   text-align: right
   padding-top: 1%
@@ -163,11 +170,19 @@ body, html
     width: 40%
     height: auto
 
+.anglaisTranslate
+  text-align: center
+  position: absolute
+  img
+    width: 5%
+    float: left
+  & .flagFRA, .flagUSA
+    margin-left: 1%
+
+// COMPETENCES ALL
+
 .anglais
   text-align: left
-
-.competenceAll, .formationAll, .experienceAll, .portfolioAll
-  padding: 0% 4% 4% 4%
 
 .competenceAll
   & p
@@ -185,7 +200,6 @@ body, html
     font-size: 120%
   & .pTitreComp
     margin-bottom: 5%
-
 
 .containerBar
   & .left
@@ -232,7 +246,6 @@ body, html
       padding-bottom: 0%
   & .experienceBox:hover
     transform: scale(1.02)
-
 
 
 // FORMATION ALL
@@ -283,6 +296,7 @@ body, html
       background: white
     &:last-child
       border-image: linear-gradient(to bottom, grey 60%, rgba(grey, 0)) 1 100%
+
 
 // PORTFOLIO ALL
 .portfolioAll
@@ -344,12 +358,3 @@ body, html
         color: $colorHoverClair
   & .projet:hover
     transform: scale(1.1)
-
-.anglais
-  text-align: center
-  position: absolute
-  img
-    width: 5%
-    float: left
-  & .flagFRA, .flagUSA
-    margin-left: 1%
