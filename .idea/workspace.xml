@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c96601a7-8935-4910-9883-acc0770e6807" name="Default Changelist" comment="fin">
+    <list default="true" id="c96601a7-8935-4910-9883-acc0770e6807" name="Default Changelist" comment="clear code before fr skills">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
@@ -181,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603116004993</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="clear code before fr skills">
+      <created>1603180433666</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1603180433666</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +213,8 @@
     <MESSAGE value="update&#10;finished the basic contentLeft&#10;finished the switch function" />
     <MESSAGE value="update" />
     <MESSAGE value="update / en version / finitions" />
-    <option name="LAST_COMMIT_MESSAGE" value="update / en version / finitions" />
+    <MESSAGE value="clear code before fr skills" />
+    <option name="LAST_COMMIT_MESSAGE" value="clear code before fr skills" />
   </component>
   <component name="WindowStateProjectService">
     <state x="686" y="344" width="622" height="333" key="#File_Watchers" timestamp="1601976266197">
@@ -234,14 +242,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603117706499" />
-    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1603116071509">
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1603180436265">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="239" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603116071509" />
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603180436265" />
     <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601906652272">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601906652272" />
+    <state x="1920" y="0" width="1504" height="1028" key="dock-window-1" timestamp="1603180502545">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1920" y="0" width="1504" height="1028" key="dock-window-1/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603180502545" />
     <state x="623" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1603117612874">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -252,7 +264,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/index.js</url>
-          <line>439</line>
+          <line>709</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>

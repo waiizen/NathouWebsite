@@ -11,7 +11,9 @@ $police: 'Montserrat', sans-serif
 $police2: sans-serif
 $police3: 'Open Sans', sans-serif
 
+// ==========
 // page generale
+// ==========
 
 body, html
   margin: 0
@@ -69,7 +71,7 @@ body, html
   grid-template-columns: repeat(7, 1fr)
   grid-template-rows: repeat(8, 1fr)
 
-.competence
+.competence, .competenceFR
   grid-column: 1 / 8
   grid-row: 1 / 3
   background-color: #f6f6f6
@@ -96,7 +98,7 @@ body, html
 .portfolio:before, .experience:before
   background-color: $colorHover
 
-.competence:before, .formation:before
+.competence:before, .formation:before, .competenceFR:before
   background-color: $colorHoverClair
 
 .box
@@ -129,10 +131,12 @@ body, html
   color: $colorRouge
   font-weight: 600
 
-.competenceAll, .formationAll, .experienceAll, .portfolioAll
+.competenceAll, .formationAll, .experienceAll, .portfolioAll, .competenceAllFR
   padding: 0% 4% 4% 4%
 
+// ==========
 // ACCUEIL
+// ==========
 
 .contact
   margin-top: 3%
@@ -179,12 +183,14 @@ body, html
   & .flagFRA, .flagUSA
     margin-left: 1%
 
+// ==========
 // COMPETENCES ALL
+// ==========
 
 .anglais
   text-align: left
 
-.competenceAll
+.competenceAll, .competenceAllFR
   & p
     text-align: center
   & h1
@@ -196,12 +202,12 @@ body, html
     font-size: 130%
   & .iconeFleche:hover
     transform: scale(1.2)
-  & .titreCompetence
+  & .titreCompetence, .titreCompetenceFR
     font-size: 120%
   & .pTitreComp
     margin-bottom: 5%
 
-.containerBar
+.containerBar, .containerBarFR
   & .left
     float: left
     margin-bottom: 1%
@@ -218,7 +224,9 @@ body, html
   & .bar
     margin-bottom: 3%
 
+// ==========
 // EXPERIENCE
+// ==========
 
 .experienceAll
   text-align: left
@@ -248,7 +256,9 @@ body, html
     transform: scale(1.02)
 
 
+// ==========
 // FORMATION ALL
+// ==========
 
 .formationAll, .experienceAll
   & h1
@@ -298,7 +308,10 @@ body, html
       border-image: linear-gradient(to bottom, grey 60%, rgba(grey, 0)) 1 100%
 
 
+// ==========
 // PORTFOLIO ALL
+// ==========
+
 .portfolioAll
   & .titre
     margin-bottom: 8%
