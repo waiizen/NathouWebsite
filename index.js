@@ -367,6 +367,16 @@ $(document).ready(function (){
                         svgStyle: {display: 'inline-block'}
                     });
                     bar7.animate(0.8);
+                    var bar8 = new ProgressBar.Line('.ang', {
+                        easing: 'easeInOut',
+                        color: '#CB9662',
+                        strokeWidth: 1.5,
+                        trailColor: '#155263',
+                        duration: 2300,
+                        easing: 'easeIn',
+                        svgStyle: {display: 'inline-block'}
+                    });
+                    bar8.animate(0.3);
                     isBarDevOn++;
                 }, 300);
         }
@@ -447,6 +457,16 @@ $(document).ready(function (){
                         svgStyle: {display: 'inline-block'}
                     });
                     barFR7.animate(0.8);
+                    var barFR8 = new ProgressBar.Line('.angFR', {
+                        easing: 'easeInOut',
+                        color: '#CB9662',
+                        strokeWidth: 1.5,
+                        trailColor: '#155263',
+                        duration: 2300,
+                        easing: 'easeIn',
+                        svgStyle: {display: 'inline-block'}
+                    });
+                    barFR8.animate(0.3);
                     isBarDevOnFR++;
                 }, 300);
         }
